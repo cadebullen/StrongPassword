@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="StrongPW.css" rel="stylesheet">
+        <script src="strongPW.js"></script>
+        <title> Password Strength Tester</title>
+    </head>
+
+    <body>
+        <h1> ||Try to Create The Strongest Password ||</h1>
+        <p>
+            <b>HINT</b> What is a strong password? A strong password:
+            <ul>
+                <li> Does not contain words easily found in a dictionary.</li>
+                <li> Contains a varaition of charcters:
+                    <br><small><ul>
+                        <li> Uppercase letters.</li>
+                        <li> Lowercase letters.</li>
+                        <li> Numbers.</li>
+                        <li> Special characters. </li>
+                    </ul></small>
+                <li> At least 10 characters in length.</li>
+                <li> Does not conform to popular patterns:
+                    <br><small><ul>
+                        <li> Initial capital letter. </li>
+                        <li> 2-4 digits at the end of the password. </li>
+                        <li> Adding an exlcamation point (!) or dollar sign ($) at the end.</li>
+                    </ul></small>
+                </li>
+                <li> Password is not similar to other passwords used on current/previous website.</li>
+                <li> Password does not contain your name. </li>
+            </ul>
+        </p>
+        <div>
+            <label for="fname">Enter your first name:</label>
+            <input type="text" id="fname">
+
+            <label for="lname">Enter your last name:</label>
+            <input type="text" id="lname">
+        
+            <label for="pw">Enter the password:</label>
+            <input type="password" id="password">
+
+            <form id="form" method="post" onsubmit="return validPW(); return false;">
+                <input type="submit" id="submit" name="submit">
+            </form>
+        </div>
+    </body>
+
+</html>

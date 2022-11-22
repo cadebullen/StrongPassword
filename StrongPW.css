@@ -1,0 +1,8 @@
+html{
+    background-color: black;
+    color:blanchedalmond;
+    font-family:'Courier New', Courier, monospace;
+}
+form{
+    display: inline-block;
+}
